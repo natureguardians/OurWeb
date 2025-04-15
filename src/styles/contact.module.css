@@ -1,0 +1,123 @@
+.contactForm {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .contactForm:hover {
+    transform: scale(1.02);
+  }
+  
+  .contactForm h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
+    background: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    outline: none;
+    border-color: var(--companyColor);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contactForm textarea {
+    min-height: 150px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .contactForm button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--companyColor);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactForm button:hover {
+    background-color: var(--companyColor);
+  }
+  
+  .contactForm .inputGroup {
+    margin-bottom: 20px;
+  }
+  
+  .contactForm .inputGroup input {
+    width: 48%;
+    margin-right: 4%;
+  }
+  
+  .contactForm .inputGroup input:last-child {
+    margin-right: 0;
+  }
+  
+  .contactForm .inputGroup input:focus {
+    border-color: var(--companyColor);
+  }
+  
+  .contactForm .inputGroup label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .contactForm .successMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--companyColor);
+  }
+  
+  .contactForm .errorMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #dc3545;
+  }
+  
+  @media (max-width: 768px) {
+    .contactForm {
+      padding: 20px;
+      margin: 20px;
+
+    }
+  
+    .contactForm .inputGroup input {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .contactForm button {
+      font-size: 1rem;
+    }
+  }
+  

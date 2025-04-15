@@ -1,0 +1,24 @@
+{
+    "blogs":[
+        {
+            "title": "Indigenious Plants",
+            "content": "Art is a good thing for us to start doing when we grow up. It has never been harder to win than this time. I know we all have these problems but this can be resolved in a very easy way.",
+            "image": "img1"
+        },
+        {
+            "title": "Science Behind Ants",
+            "content": "Art is a good thing for us to start doing when we grow up. It has never been harder to win than this time. I know we all have these problems but this can be resolved in a very easy way.",
+            "image": "img2"
+        },
+        {
+            "title": "I Love The Mountains",
+            "content": "Art is a good thing for us to start doing when we grow up. It has never been harder to win than this time. I know we all have these problems but this can be resolved in a very easy way.",
+            "image": "img3"
+        },
+        {
+            "title": "Equo Parks in Rwanda",
+            "content": "Art is a good thing for us to start doing when we grow up. It has never been harder to win than this time. I know we all have these problems but this can be resolved in a very easy way.",
+            "image": "img4"
+        }
+    ]
+}

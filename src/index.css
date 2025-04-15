@@ -1,0 +1,30 @@
+:root{
+  --primary-color: #1f242d;
+  --companyColor: rgb(5, 142, 5);
+  --linkColor: #a3a3a3;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  background: var(--primary-color);
+}
+a{
+  text-decoration: none;
+  color: var(--linkColor);
+}
+.cont{
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px){
+  .cont{
+    width: 100%;
+    margin: 0 auto;
+    padding: .5em;
+  }
+}

@@ -1,0 +1,142 @@
+:root{
+    --width: 300px;
+    --height: 200px;
+    --qty: 4;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.loading{
+    margin: 3em auto;
+    font-size: 2rem; /* Larger text for emphasis */
+    font-weight: bold; /* Make the text bold */
+    color: var(--companyColor);/* Vibrant blue color */
+    text-align: center; /* Center align the text */
+    animation: bounce 2s infinite; /* Animation to make the text bounce */
+    margin-top: 20px;
+}
+.wrapper{
+    position: relative;
+    top: 25%;
+    left: 0;
+}
+.boxWrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 3em;
+    padding: 1em;
+
+}
+
+.boxWrapper .box{
+    height: 100%;
+    padding: 1em;
+    border-bottom: 2px solid var(--linkColor);
+    filter: blur(10px);
+    transform: scale(0);
+    opacity: 0;
+    animation: showContent .7s ease-in-out forwards;
+    margin: 0 auto;
+
+}
+.boxWrapper .box h2{
+    color: var(--linkColor);
+    margin-bottom: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+.boxWrapper .box p{
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--linkColor);
+}
+.about .team{
+    width: 95%;
+    margin: 1em auto;
+    padding: 1em 0;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, rgb(32, 31, 31), transparent);
+}
+.team h1{
+    color: var(--linkColor);
+    text-align: center;
+    margin-block: 1em;
+}
+.team .members{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    min-width: calc(var(--width)* var(--elements));
+    position: relative;
+    overflow: hidden;   
+}
+.team .members:hover .member{
+    animation-play-state: paused!important; 
+}
+.team .member{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    animation: showMembers 15s linear infinite;
+    animation-delay: calc(1s + var(--i));
+    background: var(--linkColor);
+    border-radius: 10px;
+    
+}
+.team .member h3,.team .member p{
+    margin-bottom: .4em;
+    text-align: center;
+    
+}
+.team .member .profile{
+    width: 100px;
+    height: 100px;
+    margin: 1em auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px black;
+}
+.team .member .profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+@keyframes showMembers{
+    from{
+        left: 100%;
+    }
+    to{
+        left: calc(var(--width)* -1);
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
